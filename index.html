@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mapping Arrays And Arranging it</title>
+</head>
+<body>
+     <h2>JavaScript Array Sort</h2>
+        <p>Click the button to sort the array in ascending order.‹/p›
+        <button onclick="as()">Ascending Order</button>
+        <button onclick="de()">Descending Order</button>
+        <p id="result"></p>
+        <script>
+            var points = [40, 100, 1, 5, 25, 10];
+            document.getElementById("result").innerHTML = points;
+
+            function as() {
+                points,sort(function(a, b){return a - b});
+                document.getElementById("result"). innerHTML = points;
+            }
+            function de() {
+                points.sort(function(a,b){return b - a});
+                document.getElementById("result").innerHTML = points;
+            }
+        </script>
+</body>
+</html>
